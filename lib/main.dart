@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:project_pertama/lessons/button.dart';
+import 'package:project_pertama/lessons/circleavatar.dart';
 import 'package:project_pertama/lessons/container.dart';
 import 'package:project_pertama/lessons/icon.dart';
 import 'package:project_pertama/lessons/image.dart';
@@ -22,7 +23,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: const MyImage(),
+      home: const MyCircleAvatar(),
     );
   }
 }
