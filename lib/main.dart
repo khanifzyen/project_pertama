@@ -5,6 +5,8 @@ import 'package:project_pertama/lessons/column.dart';
 import 'package:project_pertama/lessons/container.dart';
 import 'package:project_pertama/lessons/icon.dart';
 import 'package:project_pertama/lessons/image.dart';
+import 'package:project_pertama/lessons/listview.dart';
+import 'package:project_pertama/lessons/row.dart';
 import 'package:project_pertama/lessons/scaffold.dart';
 import 'package:project_pertama/lessons/text.dart';
 
@@ -24,7 +26,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: const MyColumn(),
+      home: MyListView(),
     );
   }
 }
