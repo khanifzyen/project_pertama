@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:project_pertama/lessons/aspectratio.dart';
 import 'package:project_pertama/lessons/button.dart';
 import 'package:project_pertama/lessons/circleavatar.dart';
 import 'package:project_pertama/lessons/column.dart';
@@ -29,7 +30,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: const MyPadding(),
+      home: const MyAspectRatio(),
     );
   }
 }
