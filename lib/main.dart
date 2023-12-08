@@ -13,6 +13,7 @@ import 'package:project_pertama/lessons/listview.dart';
 import 'package:project_pertama/lessons/padding.dart';
 import 'package:project_pertama/lessons/row.dart';
 import 'package:project_pertama/lessons/scaffold.dart';
+import 'package:project_pertama/lessons/sizedbox.dart';
 import 'package:project_pertama/lessons/stack.dart';
 import 'package:project_pertama/lessons/text.dart';
 
@@ -32,7 +33,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: const MyExpanded(),
+      home: const MySizedBox(),
     );
   }
 }
