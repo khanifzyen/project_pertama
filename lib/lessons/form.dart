@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:project_pertama/lessons/form/checkbox.dart';
 import 'package:project_pertama/lessons/form/dropdown.dart';
+import 'package:project_pertama/lessons/form/radio.dart';
 import 'package:project_pertama/lessons/form/switch.dart';
 import 'package:project_pertama/lessons/form/textfield.dart';
 
@@ -21,6 +23,10 @@ class MyForm extends StatelessWidget {
             MyDropDown(),
             SizedBox(height: 5),
             MySwitch(),
+            SizedBox(height: 5),
+            MyRadio(),
+            SizedBox(height: 5),
+            MyCheckbox(),
           ],
         ),
       ),
