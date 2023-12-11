@@ -16,6 +16,7 @@ import 'package:project_pertama/lessons/scaffold.dart';
 import 'package:project_pertama/lessons/sizedbox.dart';
 import 'package:project_pertama/lessons/stack.dart';
 import 'package:project_pertama/lessons/text.dart';
+import 'package:project_pertama/lessons/wrap.dart';
 
 void main() {
   runApp(const MyApp());
@@ -33,7 +34,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: const MySizedBox(),
+      home: MyWrap(),
     );
   }
 }
