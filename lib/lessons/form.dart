@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:project_pertama/lessons/form/checkbox.dart';
+import 'package:project_pertama/lessons/form/datepicker.dart';
 import 'package:project_pertama/lessons/form/dropdown.dart';
 import 'package:project_pertama/lessons/form/radio.dart';
 import 'package:project_pertama/lessons/form/switch.dart';
@@ -27,6 +28,8 @@ class MyForm extends StatelessWidget {
             MyRadio(),
             SizedBox(height: 5),
             MyCheckbox(),
+            SizedBox(height: 5),
+            MyDatePicker(),
           ],
         ),
       ),
