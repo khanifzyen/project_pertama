@@ -6,6 +6,7 @@ import 'package:project_pertama/lessons/circleavatar.dart';
 import 'package:project_pertama/lessons/column.dart';
 import 'package:project_pertama/lessons/container.dart';
 import 'package:project_pertama/lessons/expanded.dart';
+import 'package:project_pertama/lessons/form.dart';
 import 'package:project_pertama/lessons/gridview.dart';
 import 'package:project_pertama/lessons/icon.dart';
 import 'package:project_pertama/lessons/image.dart';
@@ -34,7 +35,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: MyWrap(),
+      home: const MyForm(),
     );
   }
 }
