@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:project_pertama/lessons/form/checkbox.dart';
 import 'package:project_pertama/lessons/form/datepicker.dart';
+import 'package:project_pertama/lessons/form/dialog.dart';
 import 'package:project_pertama/lessons/form/dropdown.dart';
 import 'package:project_pertama/lessons/form/radio.dart';
 import 'package:project_pertama/lessons/form/switch.dart';
@@ -18,6 +19,7 @@ class MyForm extends StatelessWidget {
       body: const Padding(
         padding: EdgeInsets.all(8.0),
         child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             MyTextField(),
             SizedBox(height: 5),
@@ -30,6 +32,8 @@ class MyForm extends StatelessWidget {
             MyCheckbox(),
             SizedBox(height: 5),
             MyDatePicker(),
+            SizedBox(height: 5),
+            MyDialog(),
           ],
         ),
       ),
