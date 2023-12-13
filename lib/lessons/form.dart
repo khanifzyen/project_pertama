@@ -1,9 +1,11 @@
 import 'package:flutter/material.dart';
+import 'package:project_pertama/lessons/form/bottomsheet.dart';
 import 'package:project_pertama/lessons/form/checkbox.dart';
 import 'package:project_pertama/lessons/form/datepicker.dart';
 import 'package:project_pertama/lessons/form/dialog.dart';
 import 'package:project_pertama/lessons/form/dropdown.dart';
 import 'package:project_pertama/lessons/form/radio.dart';
+import 'package:project_pertama/lessons/form/snackbar.dart';
 import 'package:project_pertama/lessons/form/switch.dart';
 import 'package:project_pertama/lessons/form/textfield.dart';
 
@@ -34,6 +36,10 @@ class MyForm extends StatelessWidget {
             MyDatePicker(),
             SizedBox(height: 5),
             MyDialog(),
+            SizedBox(height: 5),
+            MyBottomSheet(),
+            SizedBox(height: 5),
+            MySnackBar(),
           ],
         ),
       ),
