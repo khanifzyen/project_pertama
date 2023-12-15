@@ -11,6 +11,7 @@ import 'package:project_pertama/lessons/gridview.dart';
 import 'package:project_pertama/lessons/icon.dart';
 import 'package:project_pertama/lessons/image.dart';
 import 'package:project_pertama/lessons/listview.dart';
+import 'package:project_pertama/lessons/navigation/page_one.dart';
 import 'package:project_pertama/lessons/padding.dart';
 import 'package:project_pertama/lessons/row.dart';
 import 'package:project_pertama/lessons/scaffold.dart';
@@ -35,7 +36,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: const MyForm(),
+      home: const PageOne(),
     );
   }
 }
