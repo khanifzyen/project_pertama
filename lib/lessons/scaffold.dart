@@ -80,6 +80,20 @@ class _MyScaffoldState extends State<MyScaffold> {
         child: const Icon(Icons.add),
       ),
       bottomNavigationBar: BottomNavigationBar(
+        backgroundColor: Colors.white,
+        showUnselectedLabels: false,
+        showSelectedLabels: false,
+        unselectedItemColor: Colors.black87,
+        elevation: 32,
+        type: BottomNavigationBarType.fixed,
+        selectedLabelStyle: const TextStyle(
+          height: 1.5,
+          fontSize: 12,
+        ),
+        unselectedLabelStyle: const TextStyle(
+          height: 1.5,
+          fontSize: 12,
+        ),
         items: const [
           BottomNavigationBarItem(
             icon: Icon(Icons.home),
