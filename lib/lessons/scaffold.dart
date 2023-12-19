@@ -52,10 +52,10 @@ class _MyScaffoldState extends State<MyScaffold> {
       appBar: AppBar(
         backgroundColor: Theme.of(context).colorScheme.inversePrimary,
         title: const Text("Coding Flutter"),
-        leading: IconButton(
-          onPressed: () {},
-          icon: const Icon(Icons.menu),
-        ),
+        // leading: IconButton(
+        //   onPressed: () {},
+        //   icon: const Icon(Icons.menu),
+        // ),
         actions: [
           IconButton(
             onPressed: () {},
@@ -70,18 +70,30 @@ class _MyScaffoldState extends State<MyScaffold> {
       drawer: Drawer(
         child: ListView(
           children: [
-            const DrawerHeader(
-              decoration: BoxDecoration(
-                color: Colors.deepPurple,
-              ),
-              child: Text(
-                'Drawer Header',
-                style: TextStyle(color: Colors.white),
+            Container(
+              color: Colors.blue[100],
+              child: UserAccountsDrawerHeader(
+                decoration: BoxDecoration(
+                  color: Colors.grey[200],
+                ),
+                accountName: const Text(
+                  'Khanif Zyen',
+                  style: TextStyle(color: Colors.black),
+                ),
+                accountEmail: const Text(
+                  "khanif.zyen@gmail.com",
+                  style: TextStyle(color: Colors.black),
+                ),
+                currentAccountPicture: const CircleAvatar(
+                  child: FlutterLogo(size: 50),
+                ),
               ),
             ),
             ListTile(
               title: const Text('Item 1'),
-              onTap: () {},
+              onTap: () {
+                Navigator.pop(context);
+              },
             ),
             ListTile(
               title: const Text('Item 2'),
