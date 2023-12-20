@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:project_pertama/features/home/widgets/category_home.dart';
+import 'package:project_pertama/features/home/widgets/headline_home.dart';
+import 'package:project_pertama/features/home/widgets/recommended_furnitures_home.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({super.key});
@@ -32,28 +34,22 @@ class HomePage extends StatelessWidget {
           ),
         ],
       ),
-      body: Padding(
-        padding: const EdgeInsets.symmetric(horizontal: 14.0),
+      backgroundColor: const Color(0xFFF2F2F2),
+      body: const Padding(
+        padding: EdgeInsets.symmetric(horizontal: 14.0),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            const SizedBox(height: 20),
+            SizedBox(height: 20),
+            HeadlineHome(),
+            SizedBox(height: 30),
             SizedBox(
-              width: 226,
-              child: Text(
-                'Discover the most modern furniture',
-                style: GoogleFonts.poppins(
-                  textStyle: const TextStyle(
-                      fontWeight: FontWeight.w500,
-                      fontSize: 22,
-                      color: Color(0xFF4A4543)),
-                ),
-              ),
-            ),
-            const SizedBox(height: 30),
-            const SizedBox(
               height: 40,
               child: CategoryHome(),
+            ),
+            SizedBox(height: 30),
+            Expanded(
+              child: RecommendedFurnituresHome(),
             ),
           ],
         ),
