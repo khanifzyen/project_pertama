@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:project_pertama/features/detail/pages/detail_page.dart';
 import 'package:project_pertama/features/home/pages/home_page.dart';
 import 'package:project_pertama/lessons/aspectratio.dart';
 import 'package:project_pertama/lessons/button.dart';
@@ -39,7 +40,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: HomePage(),
+      home: const DetailPage(),
     );
   }
 }
