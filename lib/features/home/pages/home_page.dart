@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:project_pertama/features/home/widgets/bottom_navbar_home.dart';
 import 'package:project_pertama/features/home/widgets/category_home.dart';
 import 'package:project_pertama/features/home/widgets/headline_home.dart';
 import 'package:project_pertama/features/home/widgets/recommended_furnitures_home.dart';
@@ -64,6 +65,7 @@ class HomePage extends StatelessWidget {
           ],
         ),
       ),
+      bottomNavigationBar: const BottomNavbarHome(),
     );
   }
 }
