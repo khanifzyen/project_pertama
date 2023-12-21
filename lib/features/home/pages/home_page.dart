@@ -35,19 +35,29 @@ class HomePage extends StatelessWidget {
         ],
       ),
       backgroundColor: const Color(0xFFF2F2F2),
-      body: const Padding(
-        padding: EdgeInsets.symmetric(horizontal: 14.0),
+      body: Padding(
+        padding: const EdgeInsets.symmetric(horizontal: 14.0),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            SizedBox(height: 20),
-            HeadlineHome(),
-            SizedBox(height: 30),
-            SizedBox(
+            const SizedBox(height: 20),
+            const HeadlineHome(),
+            const SizedBox(height: 30),
+            const SizedBox(
               height: 40,
               child: CategoryHome(),
             ),
-            SizedBox(height: 30),
+            const SizedBox(height: 30),
+            Text(
+              "Recommended Furnitures",
+              style: GoogleFonts.poppins(
+                  textStyle: const TextStyle(
+                fontWeight: FontWeight.w500,
+                fontSize: 16,
+                color: Color(0xFF4A4543),
+              )),
+            ),
+            const SizedBox(height: 19),
             Expanded(
               child: RecommendedFurnituresHome(),
             ),
